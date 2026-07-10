@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quora-like App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">QuoraApp</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Spaces</a>
+      <a href="#">Notifications</a>
+      <input type="text" placeholder="Search..." class="search-bar">
+      <button id="add-question-btn" class="btn">+ Add Question</button>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <aside class="filter-section">
+      <h3>Spaces</h3>
+      <ul id="spaces-list"></ul>
+      <button id="create-space-btn" class="btn">+ Create Space</button>
+    </aside>
+
+    <section class="question-box">
+      <h3>Add a Question</h3>
+      <input type="text" id="question-title" placeholder="Enter your question title" />
+      <button id="submit-question-btn" class="btn">Submit</button>
+    </section>
+
+    <section class="posts-section">
+      <h3>Posts</h3>
+      <div id="posts-container"></div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
